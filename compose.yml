@@ -1,9 +1,7 @@
 services:
 
   cftunnel:
-    image: cloudflare/cloudflared:2024.6.1
-    # container_name: cloudflare-tunnel
-    # hostname: cloudflare-tunnel
+    image: cloudflare/cloudflared:2024.9.1
     restart: unless-stopped
     network_mode: "host"
     command: tunnel run
