@@ -14,7 +14,7 @@ help:  ## Show this message
 export HOST_USER_ID:=$(shell id -u)
 export HOST_GROUP_ID:=$(shell id -g)
 
-DOCKER_COMPOSE := docker-compose -f compose.yml
+DOCKER_COMPOSE := docker compose -f compose.yml
 DOCKER_COMPOSE_RUN_CFTUNNEL := $(DOCKER_COMPOSE) run --rm cftunnel
 
 ##@ Building
